@@ -7,8 +7,10 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 service = FirefoxService(executable_path='geckodriver')
+# service = ChromeService(executable_path='geckodriver')
 
 driver = webdriver.Firefox(service=service)
+# driver = webdriver.Chrome(service=service)
 
 driver.get('https://music.yandex.ru/home')
 
